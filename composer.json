@@ -1,0 +1,28 @@
+{
+  "name": "dionyseos/jsonmenu",
+  "description": "",
+  "authors": [
+    {
+      "name": "Daniel Koch",
+      "email": "dk.projects.manager@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "illuminate/support": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dionyseos\\JonMenu\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dionyseos\\JsonMenu\\ServiceProvider"
+      ]
+    }
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev"
+}
