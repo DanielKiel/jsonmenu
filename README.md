@@ -1,3 +1,7 @@
+# dependencies
+
+this is a package for framework laravel 5.5+
+
 # about
 
 This is a simple json file storage to save one or more menus. There are no rules about how to save a menu - it is yours to define one at your backend and / or frontend.
