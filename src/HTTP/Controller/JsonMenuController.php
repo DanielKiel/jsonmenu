@@ -28,7 +28,7 @@ class JsonMenuController
 
     public function save(Request $request, $menu)
     {
-        return $this->api->save($menu, $request->input());
+        return $this->api->save($menu, $request->input('menu'));
     }
 
     public function delete(Request $request, $menu)

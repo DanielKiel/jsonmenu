@@ -22,6 +22,10 @@ class ServiceProvider extends BaseProvider
         $this->app->bind(MenuAPI::class, Menu::class);
 
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+
+        $this->publishes([
+            __DIR__.'/config/jsonmenu.php' => config_path('jsonmenu.php')
+        ], 'config');
     }
 
     public function register()

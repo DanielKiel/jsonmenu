@@ -88,9 +88,9 @@ class Menu implements MenuAPI
         $fs = new Filesystem();
 
         if (! $fs->isFile(jsonmenu_storage_path($name))) {
-            $fs->put(jsonmenu_storage_path($name), json_encode([]));
+            $this->save($name, []);
         }
 
-        return json_decode($fs->get(jsonmenu_storage_path($name)));
+        return (array) json_decode($fs->get(jsonmenu_storage_path($name)));
     }
 }
