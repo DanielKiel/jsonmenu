@@ -13,13 +13,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Dionyseos\\JonMenu\\": "src/"
+      "Dionyseos\\JsonMenu\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "\\Dionyseos\\JsonMenu\\ServiceProvider"
+        "Dionyseos\\JsonMenu\\ServiceProvider"
       ]
     }
   },
